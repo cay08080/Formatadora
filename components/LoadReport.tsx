@@ -156,7 +156,7 @@ export const LoadReport: React.FC<Props> = ({ result, config }) => {
 
         <div className="space-y-10 font-mono text-sm leading-relaxed">
           <div className="space-y-3">
-            <p className="text-blue-400 font-bold opacity-50 uppercase text-[10px] tracking-widest">>> CARGA POR BITOLA</p>
+            <p className="text-blue-400 font-bold opacity-50 uppercase text-[10px] tracking-widest">{" >> "} CARGA POR BITOLA</p>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/5">
               {summaryItems.map((item, i) => (
                 <p key={i} className="mb-2">
@@ -167,7 +167,7 @@ export const LoadReport: React.FC<Props> = ({ result, config }) => {
           </div>
 
           <div className="space-y-3">
-             <p className="text-blue-400 font-bold opacity-50 uppercase text-[10px] tracking-widest">>> ESCALONAMENTO LONGITUDINAL</p>
+             <p className="text-blue-400 font-bold opacity-50 uppercase text-[10px] tracking-widest">{" >> "} ESCALONAMENTO LONGITUDINAL</p>
              <div className="bg-white/5 p-6 rounded-2xl border border-white/5 space-y-4">
                 <p>NÍVEIS CALCULADOS: <span className="font-bold text-blue-300">{result.layers.length}</span></p>
                 <div className="pl-6 border-l-2 border-white/10 space-y-2 text-xs">
